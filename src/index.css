@@ -1,13 +1,86 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#quote-box {
+  width: 600px;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.quote {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.author {
+  font-weight: 100;
+  font-size: 20px;
+  align-self: end;
+  margin-right: 20px;
+}
+
+.tweet-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.tweet-box a {
+  color: #fff;
+}
+
+.btn {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.btn Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 15px;
+}
+
+.btn Button:hover {
+  cursor: pointer;
+}
+
+footer p, footer a {
+  color: #fff;
+  text-decoration: none;
 }
